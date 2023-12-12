@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+}
+
+.hero-text {
+  background-image: url("/studiosession/cameron5.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 2rem 1.5rem;
+  z-index: 10000;
+}
+
+.nav-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 3rem;
+  position: relative;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+.nav-item {
+  padding: 0.2rem 1.2rem;
+  position: relative;
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 100px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav-logo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100px;
+  background-color: white;
+  transition: 5s ease-in-out;
+}
+
+/* .nav-link:hover,
+.nav-logo:hover {
+  color: gold;
+  
+} */
+
+header.sticky {
+  padding: 0.3125rem 1.25rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+header.sticky ul li a,
+header.sticky .logo {
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  text-align: center;
+  position: absolute;
+  display: block;
+  top: 84%;
+  left: 12.7%;
+  transform: translate(-45%, -68%);
+  color: white;
+  font-size: 5rem;
+}
+
+.bio {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 94%;
+  left: 25.9%;
+  transform: translate(-45%, -68%);
+  color: white;
+  font-size: 3.2rem;
+}
+
+/* Artist Images */
+
+.artist-title {
+  text-align: center;
+  color: white;
+}
+
+.artist {
+  width: 100%;
+  background-image: linear-gradient(gold, red);
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.music-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 0.9rem;
+}
+
+.photo-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  gap: 9rem;
+  padding: 1.5rem 1.5rem;
+  align-items: center;
+}
+
+.image {
+  width: 400px;
+  height: 350px;
+  border-radius: 5%;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+.image:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.3);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 824px) {
+  .bio {
+    display: block;
+    font-size: 1.5rem;
+    left: 44%;
+    top: 92%;
+    width: 100%;
+  }
+
+  .hero-text {
+    background-position: 82%;
+
+  }
+
+  .bar {
+    background-color: white;
+  }
+
+  .nav-logo {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  .nav-item {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 20px;
+    background-color: #262626;
+    opacity: 1;
+    width: 100%;
+    font-size: 1.5rem;
+    gap: 150px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
