@@ -168,23 +168,23 @@ header.sticky .logo {
   font-size: 3.2rem;
 }
 
-/* Artist Images */
+/* Artist Gallery Section  */
 .artist {
   width: 100%;
   /* background-image: linear-gradient(gold, red); */
-  background-color: #000;
+  /* background-color: #000; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   height: 160vh;
 }
 
-.artist h1 {
+.title{
   text-align: center;
+  font-size: 1.8rem;
+  font-weight: 100;
   color: white;
-  font-size: 2.5rem;
-  padding-top: 2.9rem;
-  font-weight: 200;
+  margin-top: 3rem;
 }
 
 .gallery-container {
@@ -206,6 +206,7 @@ header.sticky .logo {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 200;
+  color: white;
 }
 
 .gallery img {
@@ -224,13 +225,38 @@ header.sticky .logo {
   transition: all 0.5s ease-in-out;
 }
 
+/* Contact Section */
 
+.contact{
+    background-image: url("/studiosession/artist4.jpg");
+  background-size:cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-#contact {
-  width: 100%;
-  height: 100vh;
-  background-color: green;
 }
+
+
+.contact h1{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/* 
+.form-container{
+  width: 100%;
+
+  color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
 
 @media (max-width: 768px) {
   .hamburger {
