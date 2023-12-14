@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+    <title>Cameron Nesbitt</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -70,7 +73,9 @@
                 </div>
                 <div class="box">
                     <img class="image" src="/artists/ALV.jpg" />
-                    <h3 class="artist-title">ALV</h3>
+                    <h3 class="artist-title">Anti La Vie 
+
+                    </h3>
                 </div>
                 <div class="box">
                     <img class="image" src="/artists/KPM.jpeg" />
@@ -86,30 +91,54 @@
             <h1>Contact Details</h1>
             <form action="#">
                 <div class="input-box">
-                    <div class="input-filed field">
+                    <div class="input-field field">
                         <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                        <div class="error-txt">Full Name Can't Be Blank</div>
                     </div>
-                    <div class="input-filed field">
-                        <input type="text" placeholder="Email Address" id="name" class="item" autocomplete="off">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                        <div class="error-txt">Email Address Can't Be Blank</div>
                     </div>
-                    <div class="input-filed field">
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
                         <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                        <div class="error-txt">Phone Number Can't Be Blank</div>
                     </div>
-                    <div class="input-filed field">
+                    <div class="input-field field">
                         <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                        <div class="error-txt">Subject Can't Be Blank</div>
                     </div>
+                </div>
+                <div class="textarea-field field">
                     <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"
                         autocomplete="off"></textarea>
+                        <div class="error-txt">Message Can't Be Blank</div>
+                    </div>
                     <button type="submit">Send Message</button>
-                </div>
+
             </form>
 
         </div>
+    </section>
 
+    <section class="footer">
+        <footer>
+            <div class="instagram">
 
+            </div>
+            <div class="email">
+
+            </div>
+            <div class="design-company">
+
+            </div>
+        </footer>
     </section>
 
     <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
