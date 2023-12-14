@@ -231,10 +231,15 @@ header.sticky .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
+
+.contact-container{
+  margin-top: 8rem;
+}
 .contact h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: white;
   text-align: center;
   margin-bottom: 10px;
@@ -272,15 +277,33 @@ form .input-box {
   margin: 12px;
 }
 
+.field.error .item {
+  border-color: #d93025;
+}
+
 .field .item::placeholder {
   text-decoration: underline;
   color: rgba(255, 255, 255, 1);
 }
+.field .error-txt{
+  font-size: 1.215rem;
+  color: white;
+  text-align: center;
+  margin: -3px 12px 8px 50px;
+  outline: #000;
+  background-color:  rgba(255,0,0,0.516); 
+  border-radius: 3px;
+  display: none;
+}
 
+.field.error .error-txt{
+  display: block
+}
 
 form .textarea-field .item {
   resize: none;
 }
+
 form button {
   padding: 12px 32px ;
   background: #000;
@@ -304,21 +327,60 @@ form button:hover{
 }
 
 
-.field .error-txt{
-  font-size: 1.215rem;
-  color: black;
-  text-align: center;
-  margin: -3px 12px 8px 50px;
-  outline: #000;
-  background-color:  rgba(255, 255, 255, 0.7); 
-  border-radius: 3px;
-  display: none;
-}
-
 form .textarea-field .error-txt{
   margin-top: -10px;
 }
- 
+
+
+/* Footer */
+
+
+
+
+.social-icons{
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 14px;
+  border-radius: 50%;
+}
+
+.social-icons a i {
+  font-size: 2rem;
+  color: #000;
+  opacity: 0.9;
+}
+
+.social-icons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.social-icons a:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+.copyright{
+  color: white ;
+  opacity: 1;
+}
+
+.designer{
+  color: white ;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0px 5px;
+}
 
 @media (max-width: 768px) {
   .hamburger {
@@ -376,7 +438,7 @@ form .textarea-field .error-txt{
   }
 
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   }
 
   .artist {
@@ -387,6 +449,33 @@ form .textarea-field .error-txt{
     font-size: 1.98rem;
     padding-top: 3.9rem;
   }
+
+  /* Conact Section */
+
+  .contact h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+
+  .contact form {
+    width: 390px;
+    text-align: center;
+    padding: 0 1.6rem;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+  }
+
+  .footer-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+
+
 }
 
 @media (max-width: 824px) {
@@ -402,6 +491,10 @@ form .textarea-field .error-txt{
     background-position: 82%;
   }
 
+  .artist {
+    height: 265vh;
+  }
+
   .bar {
     background-color: white;
   }
@@ -413,5 +506,9 @@ form .textarea-field .error-txt{
 
   .nav-item {
     padding: 0 20px;
+  }
+
+  .contact {
+    background-position: 50%;
   }
 }

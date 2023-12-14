@@ -30,51 +30,100 @@ const subject = document.getElementById("subject")
 const message = document.getElementById("message")
 
 
-function sendEmail(){
+function sendEmail() {
 
-    const bodyMessage = `Full Name ${fullName.value} <br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
+    const bodyMessage = `Full Name: ${fullName.value} <br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "jerome.r.power@gmail.com",
-        Password : "EBC8E013126EE7D1BEFBAFA364BC6488B423",
-        To : 'jerome.r.power@gmail.com',
-        From : "jerome.r.power@gmail.com",
-        Subject : subject.value,
-        Body : "And this is the body"
+        SecureToken: "26055147-8fa3-42a9-956c-d7745a64f58c",
+        // Host: "smtp.elasticemail.com",
+        // Username: "jerome.r.power@gmail.com",
+        // Password: "EBC8E013126EE7D1BEFBAFA364BC6488B423",
+        To: 'jerome.r.power@gmail.com',
+        From: "jerome.r.power@gmail.com",
+        Subject: subject.value,
+        Body: bodyMessage
+   
     }).then(
-      message => {
-        if(message == "OK"){
-            Swal.fire({
-                title: "Sent Successfully!",
-                text: "Thank You For Reaching Out",
-                icon: "Success"
-              });
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Sent Successfully!",
+                    text: "Thank You For Reaching Out",
+                    icon: "Success"
+                });
 
+            }
         }
-      }
     );
-    
+
 }
 
 
 function checkInputs() {
     const items = document.querySelectorAll(".item");
 
-    for (const item of items){
+    for (const item of items) {
         if (item.value == "") {
             item.classList.add("error");
             item.parentElement.classList.add('error');
 
         }
+        if(items[1].value != ""){
+            checkEmail();
+        }
+
+        items[1].addEventListener("keyup", () => {
+            checkEmail();
+        });
+
+        item.addEventListener('keyup', () => {
+            if (item.value != "") {
+                item.classList.remove("error");
+                item.parentElement.classList.remove("error")
+            } else {
+                item.classList.add("error");
+                item.parentElement.classList.add("error");
+            }
+
+        });
     }
 }
 
 
+function checkEmail() {
+    // const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+    const errorTxtEmail = document.querySelector(".error-txt.email")
+
+    if (!email.value.match(emailRegex)) {
+        email.classList.add("error");
+        email.parentElement.classList.add("error");
+
+        if (email.value != ""){
+            errorTxtEmail.innerText = "Enter a valid Email Address"
+        } else{
+            errorTxtEmail.innerText = "Email Address Can't Be Blank"
+        }
+    } else {
+        email.classList.remove("error");
+        email.parentElement.classList.remove("error");
+    }
+};
+
+
+
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    // sendEmail();
     checkInputs();
+
+    if (!fullName.classList.contains("error") && 
+    !email.classList.contains("error") && !phone.classList.contains("error")  && !subject.classList.contains("error") && !message.classList.contains("error")) {
+       sendEmail();
+       form.reset();
+       return false;
+    }
 });
 
