@@ -173,7 +173,7 @@ header.sticky .logo {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 160vh;
+  height: 100vh;
 }
 
 .title {
@@ -185,15 +185,15 @@ header.sticky .logo {
 }
 
 .gallery-container {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   height: 100vh;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.25rem;
   padding: 1.25rem;
   justify-content: center;
   align-items: center;
@@ -438,11 +438,11 @@ form .textarea-field .error-txt{
   }
 
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 
   .artist {
-    height: 280vh;
+    height: 100vh;
   }
 
   .artist h1 {
