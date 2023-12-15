@@ -424,7 +424,6 @@ form .textarea-field .error-txt {
   .gallery-container {
     width: 100%;
     margin: 0 auto;
-    overflow: scroll;
   }
 
   .artist {
