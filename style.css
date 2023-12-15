@@ -221,6 +221,7 @@ header.sticky .logo {
   background-size: cover;
   min-height: 100vh;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -435,6 +436,7 @@ form .textarea-field .error-txt{
     width: 100%;
     margin: 0 auto;
     /* height: 360vh; */
+    overflow: scroll;
   }
 
   .artist {
@@ -463,9 +465,13 @@ form .textarea-field .error-txt{
   }
 
   .contact form {
-    width: 390px;
-    text-align: center;
-    padding: 0 1.6rem;
+    width: 370px;
+    padding-right: 1.1rem;
+  }
+
+  form .input-box {
+    display: flex;
+    justify-content: space-between;
   }
 
   .field .item {
@@ -474,14 +480,26 @@ form .textarea-field .error-txt{
 
   /* Social Links */
 
+  .links{
+    height: 100%;
 
+  }
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+
+
+}
   .social-icons{
     margin-top: 10rem;
   }
 
-  /* .copyright{
-    margin-bottom: 0.2rem;
-  } */
+  .copyright{
+    margin-bottom: 0.9rem;
+    font-size: 0.8rem;
+  }
 
   .designer{
     opacity: 1;
