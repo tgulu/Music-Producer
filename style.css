@@ -465,8 +465,8 @@ form .textarea-field .error-txt{
   }
 
   .contact form {
-    width: 370px;
-    padding-right: 1.1rem;
+    width: 360px;
+    padding-right: 0.9rem;
   }
 
   form .input-box {
@@ -475,15 +475,11 @@ form .textarea-field .error-txt{
   }
 
   .field .item {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   /* Social Links */
 
-  .links{
-    height: 100%;
-
-  }
 
 .social-links{
   display: flex;
