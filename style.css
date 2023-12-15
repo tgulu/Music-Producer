@@ -171,8 +171,10 @@ header.sticky .logo {
   font-size: 3.5rem;
   font-weight: 100;
   color: white;
-  /* margin-top: 3rem; */
+  margin-top: 4rem;
 }
+
+
 
 .gallery-container {
   width: 60%;
@@ -424,8 +426,8 @@ form .textarea-field .error-txt{
 
 
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.4rem;
     padding: 1.25rem;
   }
 
@@ -436,12 +438,12 @@ form .textarea-field .error-txt{
   }
 
   .artist {
-    height: 114vh;
+    height: 100vh;
   }
 
   .artist h1 {
     font-size: 1.4rem;
-    margin-top: 2.9rem;
+    margin-top: 5.8rem;
   }
 
   .gallery h3 {
@@ -473,17 +475,17 @@ form .textarea-field .error-txt{
 
 
   .social-icons{
-    margin-top: 9.3rem;
+    margin-top: 10rem;
   }
 
-  .copyright{
-    margin-bottom: 2.9rem;
-  }
+  /* .copyright{
+    margin-bottom: 0.2rem;
+  } */
 
   .designer{
     opacity: 1;
     letter-spacing: 1px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
   }
 
@@ -519,6 +521,6 @@ form .textarea-field .error-txt{
   }
 
   .contact {
-    background-position: 90%;
+    background-position: 50%;
   }
 }
