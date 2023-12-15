@@ -2,10 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Hedvig', Arial, Helvetica, sans-serif;
-  
+  font-family: "Hedvig", Arial, Helvetica, sans-serif;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -139,7 +137,6 @@ header.sticky .logo {
   object-fit: cover;
 }
 
-
 .bio {
   text-align: center;
   position: absolute;
@@ -147,11 +144,9 @@ header.sticky .logo {
   flex-direction: column;
   width: 75%;
   top: 94%;
-  left: 35.9%;
+  left: 14.5%;
   transform: translate(-45%, -68%);
   color: white;
-  /* border-radius: 6px;
-  box-shadow: 0 3px 3px 3px rgba(255, 255, 255, 0.3); */
   font-size: 2.8rem;
 }
 
@@ -173,8 +168,6 @@ header.sticky .logo {
   color: white;
   margin-top: 4rem;
 }
-
-
 
 .gallery-container {
   width: 60%;
@@ -210,7 +203,7 @@ header.sticky .logo {
 .gallery img:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 1.35em 1.175em,
     rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-  transform: translateY(-3px) scale(1.2);
+  transform: translateY(-3px) scale(1.4);
   transition: all 0.5s ease-in-out;
 }
 
@@ -227,11 +220,9 @@ header.sticky .logo {
   flex-direction: column;
 }
 
-
 /* .contact-container{
   margin-top: 8rem;
 } */
-
 
 .contact h1 {
   font-size: 2.5rem;
@@ -259,7 +250,6 @@ form .input-box {
   width: 48.5%;
 }
 
-
 .field .item {
   width: 100%;
   padding: 18px;
@@ -280,19 +270,19 @@ form .input-box {
   text-decoration: underline;
   color: rgba(255, 255, 255, 1);
 }
-.field .error-txt{
+.field .error-txt {
   font-size: 1.215rem;
   color: white;
   text-align: center;
   margin: -3px 12px 8px 50px;
   outline: #000;
-  background-color:  rgba(255,0,0,0.516); 
+  background-color: rgba(255, 0, 0, 0.516);
   border-radius: 3px;
   display: none;
 }
 
-.field.error .error-txt{
-  display: block
+.field.error .error-txt {
+  display: block;
 }
 
 form .textarea-field .item {
@@ -300,7 +290,7 @@ form .textarea-field .item {
 }
 
 form button {
-  padding: 14px 32px ;
+  padding: 14px 32px;
   background: #000;
   border: none;
   outline: none;
@@ -314,25 +304,18 @@ form button {
   margin-top: 1.25rem;
 }
 
-
-form button:hover{
+form button:hover {
   box-shadow: 0 3px 10px 3px rgba(255, 255, 255, 1);
   color: white;
   transition: all 0.9s ease-out;
 }
 
-
-form .textarea-field .error-txt{
+form .textarea-field .error-txt {
   margin-top: -10px;
 }
 
-
 /* Social Links */
-
-
-
-
-.social-icons{
+.social-icons {
   margin-top: 20rem;
   display: flex;
   justify-content: center;
@@ -352,23 +335,23 @@ form .textarea-field .error-txt{
   opacity: 0.9;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
   background-color: #111;
   transition: 0.5s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
   color: white;
   transition: 0.5s;
 }
 
-.copyright{
-  color: white ;
+.copyright {
+  color: white;
   opacity: 1;
 }
 
-.designer{
-  color: white ;
+.designer {
+  color: white;
   opacity: 0.9;
   letter-spacing: 1px;
   font-size: 1.8rem;
@@ -425,14 +408,13 @@ form .textarea-field .error-txt{
 
   /* artist section */
 
-
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 1.4rem;
     padding: 1.25rem;
   }
 
-  .gallery-container{
+  .gallery-container {
     width: 100%;
     margin: 0 auto;
     /* height: 360vh; */
@@ -454,6 +436,11 @@ form .textarea-field .error-txt{
     font-size: 1.4rem;
     font-weight: 400;
     color: white;
+  }
+
+  .gallery img:hover {
+    transform: translateY(-3px) scale(1.2);
+    transition: all 0.5s ease-in-out;
   }
 
   /* Conact Section */
@@ -480,31 +467,26 @@ form .textarea-field .error-txt{
 
   /* Social Links */
 
-
-.social-links{
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-
-
-}
-  .social-icons{
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  .social-icons {
     margin-top: 10rem;
   }
 
-  .copyright{
+  .copyright {
     margin-bottom: 0.9rem;
     font-size: 0.8rem;
   }
 
-  .designer{
+  .designer {
     opacity: 1;
     letter-spacing: 1px;
     font-size: 0.8rem;
     font-weight: 400;
   }
-
-
 }
 
 @media (max-width: 824px) {
@@ -519,8 +501,6 @@ form .textarea-field .error-txt{
   .hero-background {
     background-position: 82%;
   }
-
-
 
   .bar {
     background-color: white;
@@ -537,5 +517,12 @@ form .textarea-field .error-txt{
 
   .contact {
     background-position: 50%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .bio {
+    left: 20.9%;
+    font-size: 2.1rem;
   }
 }

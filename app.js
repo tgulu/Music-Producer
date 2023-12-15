@@ -35,12 +35,9 @@ function sendEmail() {
     const bodyMessage = `Full Name: ${fullName.value} <br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
 
     Email.send({
-        SecureToken: "26055147-8fa3-42a9-956c-d7745a64f58c",
-        // Host: "smtp.elasticemail.com",
-        // Username: "jerome.r.power@gmail.com",
-        // Password: "EBC8E013126EE7D1BEFBAFA364BC6488B423",
-        To: 'jerome.r.power@gmail.com',
-        From: "jerome.r.power@gmail.com",
+        SecureToken: "564ea366-38be-4a05-931e-117ec28dc37b",
+        To: 'crnaudio@gmail.com',
+        From: "crnaudio@gmail.com",
         Subject: subject.value,
         Body: bodyMessage
    
@@ -92,8 +89,8 @@ function checkInputs() {
 
 
 function checkEmail() {
-    // const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    // const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
 
     const errorTxtEmail = document.querySelector(".error-txt.email")
 
