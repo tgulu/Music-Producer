@@ -139,16 +139,6 @@ header.sticky .logo {
   object-fit: cover;
 }
 
-/* .hero-title {
-  text-align: center;
-  position: absolute;
-  display: block;
-  top: 84%;
-  left: 12.7%;
-  transform: translate(-45%, -68%);
-  color: white;
-  font-size: 5rem;
-} */
 
 .bio {
   text-align: center;
@@ -178,10 +168,10 @@ header.sticky .logo {
 
 .title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 3.5rem;
   font-weight: 100;
   color: white;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .gallery-container {
@@ -235,9 +225,11 @@ header.sticky .logo {
 }
 
 
-.contact-container{
+/* .contact-container{
   margin-top: 8rem;
-}
+} */
+
+
 .contact h1 {
   font-size: 2.5rem;
   color: white;
@@ -429,24 +421,34 @@ form .textarea-field .error-txt{
   }
 
   /* artist section */
-  .music-title {
-    text-align: center;
-    color: white;
-    font-size: 1.4rem;
-    padding: 0.9rem 0.9rem;
-  }
+
 
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+    gap: 1.2rem;
+    padding: 1.25rem;
+  }
+
+  .gallery-container{
+    width: 100%;
+    margin: 0 auto;
+    /* height: 360vh; */
   }
 
   .artist {
-    height: 100vh;
+    height: 114vh;
   }
 
   .artist h1 {
-    font-size: 1.98rem;
-    padding-top: 3.9rem;
+    font-size: 1.4rem;
+    margin-top: 2.9rem;
+  }
+
+  .gallery h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: white;
   }
 
   /* Conact Section */
@@ -501,9 +503,7 @@ form .textarea-field .error-txt{
     background-position: 82%;
   }
 
-  .artist {
-    height: 265vh;
-  }
+
 
   .bar {
     background-color: white;
@@ -519,6 +519,6 @@ form .textarea-field .error-txt{
   }
 
   .contact {
-    background-position: 50%;
+    background-position: 90%;
   }
 }
