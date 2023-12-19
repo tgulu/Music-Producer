@@ -237,11 +237,17 @@ header.sticky .logo {
 
 form .input-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 8px;
 }
 
 .input-box .input-field {
-  width: 48.5%;
+  width: 50%;
+}
+
+#subject-box{
+  width: 100%;
+
 }
 
 .field .item {

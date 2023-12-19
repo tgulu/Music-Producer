@@ -25,14 +25,15 @@ window.addEventListener('scroll', () => {
 const form = document.querySelector("form");
 const fullName = document.getElementById("name")
 const email = document.getElementById("email")
-const phone = document.getElementById("phone")
+// const phone = document.getElementById("phone")
 const subject = document.getElementById("subject")
 const message = document.getElementById("message")
 
 
 function sendEmail() {
 
-    const bodyMessage = `Full Name: ${fullName.value} <br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
+    const bodyMessage = `Full Name: ${fullName.value} <br> Email: ${email.value}<br> Message: ${message.value}`;
+    // const phoneMessage = `Full Name: ${fullName.value} <br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
 
     Email.send({
         SecureToken: "564ea366-38be-4a05-931e-117ec28dc37b",
@@ -117,7 +118,7 @@ form.addEventListener("submit", (e) => {
     checkInputs();
 
     if (!fullName.classList.contains("error") && 
-    !email.classList.contains("error") && !phone.classList.contains("error")  && !subject.classList.contains("error") && !message.classList.contains("error")) {
+    !email.classList.contains("error") && !subject.classList.contains("error") && !message.classList.contains("error")) {
        sendEmail();
        form.reset();
        return false;
