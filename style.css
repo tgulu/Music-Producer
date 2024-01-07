@@ -365,9 +365,10 @@ form .textarea-field .error-txt {
   }
 
   .bio {
-    font-size: 1.9rem;
+    color: white;
+    font-size: 2.1rem;
     left: 49%;
-    top: 92%;
+    top: 83%;
     width: 100%;
   }
 }
@@ -424,7 +425,7 @@ form .textarea-field .error-txt {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
     gap: 1.1rem;
-    padding: 0.8rem 1.25rem;
+    padding: 4rem 1.25rem 0rem;
   }
 
   .gallery-container {
@@ -437,8 +438,8 @@ form .textarea-field .error-txt {
   }
 
   .artist h1 {
-    font-size: 1.7rem;
-    margin-top: 2.1rem;
+    font-size: 2.3rem;
+    margin-top: 3.9rem;
     font-weight: 400;
   }
 
@@ -498,9 +499,9 @@ form .textarea-field .error-txt {
 @media (max-width: 824px) {
   .bio {
     display: block;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     left: 44%;
-    top: 92%;
+    /* top: 92%; */
     width: 100%;
   }
 
@@ -529,7 +530,7 @@ form .textarea-field .error-txt {
 @media (max-width: 1920px) {
   .bio {
     left: 44.9%;
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 }
 
