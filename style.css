@@ -9,8 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.cam{
+.cam {
   display: none;
 }
 
@@ -58,7 +57,7 @@ header {
 }
 
 .nav-logo {
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
   font-weight: 500;
   color: #fff;
@@ -142,15 +141,32 @@ header.sticky .logo {
   object-fit: cover;
 }
 
+.bio i {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.bio i:hover {
+  color: #f9fafb;
+  transform: scale(1.25);
+}
+
+.bio a:hover {
+  text-decoration: underline;
+}
+
 .bio {
+  display: flex;
+  align-items: center;
   text-align: center;
   position: absolute;
   display: flex;
-  flex-direction: column;
+  gap: 60px;
+  /* flex-direction: column; */
   width: 75%;
   top: 94%;
   left: 14.5%;
-  transform: translate(-45%, -68%);
+  transform: translate(-18%, -68%);
   color: white;
   font-size: 2.8rem;
 }
@@ -250,9 +266,8 @@ form .input-box {
   width: 50%;
 }
 
-#subject-box{
+#subject-box {
   width: 100%;
-
 }
 
 .field .item {
@@ -320,28 +335,28 @@ form .textarea-field .error-txt {
 }
 
 /* Social Links */
-.social-icons {
-  margin-top: 20rem;
+
+.social-section {
   display: flex;
+  align-items: center;
   justify-content: center;
+  background-color: #111010;
+  height: 90px;
+  font-size: 30px;
 }
 
-.social-icons a {
-  text-decoration: none;
-  padding: 10px;
-  background-color: white;
-  margin: 14px;
-  border-radius: 50%;
+.social-icons {
+  /* margin-top: 20rem; */
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .social-icons a i {
-  font-size: 2rem;
-  color: #000;
-  opacity: 0.9;
+  color: white;
 }
 
 .social-icons a:hover {
-  background-color: #111;
   transition: 0.5s;
 }
 
@@ -355,11 +370,11 @@ form .textarea-field .error-txt {
   opacity: 1;
 }
 
-.designer {
+.designer,
+p {
   color: white;
   opacity: 0.9;
   letter-spacing: 1px;
-  font-size: 1.8rem;
   font-weight: 400;
   margin: 0px 5px;
 }
@@ -399,7 +414,7 @@ form .textarea-field .error-txt {
     position: fixed;
     left: -100%;
     top: 0px;
-    gap: 20px;
+    gap: 10px;
     background-color: black;
     opacity: 1;
     width: 100%;
