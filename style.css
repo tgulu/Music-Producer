@@ -59,7 +59,7 @@ header {
 .nav-logo {
   font-size: 2rem;
   position: relative;
-  font-weight: 500;
+  font-weight: 100;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ header {
 
 .nav-link {
   position: relative;
-  margin: 0 40px;
+  margin: 0 30px;
   color: #fff;
   letter-spacing: 2px;
   font-size: 1.2rem;
@@ -162,11 +162,9 @@ header.sticky .logo {
   position: absolute;
   display: flex;
   gap: 60px;
-  /* flex-direction: column; */
   width: 75%;
   top: 94%;
   left: 14.5%;
-  transform: translate(-18%, -68%);
   color: white;
   font-size: 2.8rem;
 }
@@ -341,15 +339,14 @@ form .textarea-field .error-txt {
   align-items: center;
   justify-content: center;
   background-color: #111010;
-  height: 90px;
-  font-size: 30px;
+  color: white;
+  /* height: 60px;
+  font-size: 25px; */
 }
 
 .social-icons {
-  /* margin-top: 20rem; */
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 
 .social-icons a i {
@@ -370,15 +367,6 @@ form .textarea-field .error-txt {
   opacity: 1;
 }
 
-.designer,
-p {
-  color: white;
-  opacity: 0.9;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
-}
-
 @media screen and (max-width: 420px) {
   header {
     padding: 1.7rem 1.2rem;
@@ -386,10 +374,9 @@ p {
 
   .bio {
     color: white;
-    font-size: 2.1rem;
-    left: 49%;
-    top: 83%;
+    font-size: 1.9rem;
     width: 100%;
+    transform: translate(-45%, -65%);
   }
 }
 
@@ -494,7 +481,7 @@ p {
 
   /* Social Links */
 
-  .social-links {
+  /* .social-links {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -513,6 +500,22 @@ p {
     letter-spacing: 1px;
     font-size: 0.8rem;
     font-weight: 400;
+  } */
+
+  .social-section {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .social-icons {
+    padding: 2px;
+    gap: 10px;
+    display: flex;
+  }
+
+  .social-icons i {
+    padding-right: 30px;
+    font-size: 25px;
   }
 }
 
@@ -547,15 +550,21 @@ p {
   }
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .bio {
     left: 44.9%;
-    /* font-size: 2rem; */
+    transform: translate(-40%, -68%);
+    width: 80%;
   }
-}
 
-@media (min-width: 1930px) {
-  .bio {
-    left: 14.5%;
+  .social-section {
+    height: 60px;
+    font-size: 25px;
+  }
+  .social-icons {
+    padding-right: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
   }
 }
