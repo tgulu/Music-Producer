@@ -525,7 +525,7 @@ form .textarea-field .error-txt {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1820px) {
   .bio {
     left: 44.9%;
     transform: translate(-40%, -68%);
