@@ -39,6 +39,7 @@ header {
   z-index: 10000;
 }
 
+/* Hero background section with full screen image */
 .hero-background {
   background-image: url("/studiosession/cameron5.webp");
   background-size: cover;
@@ -56,6 +57,7 @@ header {
   align-items: center;
 }
 
+/* logo inside the navigation */
 .nav-logo {
   font-size: 2rem;
   position: relative;
@@ -83,6 +85,7 @@ header {
   transition: 0.5s;
 }
 
+/* Hover effect for the underline animation on navigation links */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -97,6 +100,7 @@ header {
   pointer-events: none;
 }
 
+/* hovering or focusing on a navigation link */
 .nav-link:hover::after,
 .nav-link:focus::after {
   opacity: 1;
@@ -141,6 +145,7 @@ header.sticky .logo {
   object-fit: cover;
 }
 
+/* Icon color and transition effect inside bio section */
 .bio i {
   color: white;
   transition: color 0.5s ease;
@@ -166,7 +171,6 @@ header.sticky .logo {
   top: 94%;
   left: 14.5%;
   color: white;
-  font-size: 2.8rem;
 }
 
 /* Artist Gallery Section  */
@@ -178,6 +182,7 @@ header.sticky .logo {
   height: 100vh;
 }
 
+/* Title styling for the artist section */
 .title {
   text-align: center;
   font-size: 3.5rem;
@@ -192,6 +197,7 @@ header.sticky .logo {
   height: 100vh;
 }
 
+/* Grid layout for the gallery */
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -208,6 +214,7 @@ header.sticky .logo {
   color: white;
 }
 
+/* Image styling in the gallery */
 .gallery img {
   width: 100%;
   height: auto;
@@ -220,12 +227,11 @@ header.sticky .logo {
 .gallery img:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 1.35em 1.175em,
     rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-  transform: translateY(-3px) scale(1.4);
+  transform: translateY(-3px) scale(0.8);
   transition: all 0.5s ease-in-out;
 }
 
 /* Contact Section */
-
 .contact {
   background-image: url("/studiosession/artist4.webp");
   background-size: cover;
@@ -237,6 +243,7 @@ header.sticky .logo {
   flex-direction: column;
 }
 
+/* Contact heading styling */
 .contact h1 {
   font-size: 2.5rem;
   color: white;
@@ -254,6 +261,7 @@ header.sticky .logo {
   text-align: center;
 }
 
+/* Input field styling for contact form */
 form .input-box {
   display: flex;
   justify-content: center;
@@ -280,6 +288,7 @@ form .input-box {
   margin: 12px 0;
 }
 
+/* Error state styling for form fields */
 .field.error .item {
   border-color: #d93025;
 }
@@ -299,14 +308,17 @@ form .input-box {
   display: none;
 }
 
+/* Display error message when error class is applied */
 .field.error .error-txt {
   display: block;
 }
 
+/* Disable resize for textareas in the form */
 form .textarea-field .item {
   resize: none;
 }
 
+/* Button styling for form submission */
 form button {
   padding: 14px 32px;
   background: #000;
@@ -322,6 +334,7 @@ form button {
   margin-top: 1.25rem;
 }
 
+/* Hover effect for form button */
 form button:hover {
   box-shadow: 0 3px 10px 3px rgba(255, 255, 255, 1);
   color: white;
@@ -332,7 +345,7 @@ form .textarea-field .error-txt {
   margin-top: -10px;
 }
 
-/* Social Links */
+/* Social Links Section */
 
 .social-section {
   display: flex;
@@ -340,10 +353,9 @@ form .textarea-field .error-txt {
   justify-content: center;
   background-color: #111010;
   color: white;
-  /* height: 60px;
-  font-size: 25px; */
 }
 
+/* Flexbox for social icons */
 .social-icons {
   display: flex;
   align-items: center;
@@ -353,6 +365,7 @@ form .textarea-field .error-txt {
   color: white;
 }
 
+/* Hover transition for social icons */
 .social-icons a:hover {
   transition: 0.5s;
 }
@@ -367,6 +380,7 @@ form .textarea-field .error-txt {
   opacity: 1;
 }
 
+/* Responsive Styling */
 @media screen and (max-width: 420px) {
   header {
     padding: 1.7rem 1.2rem;
@@ -427,6 +441,10 @@ form .textarea-field .error-txt {
     left: 0;
   }
 
+  .bio {
+    font-size: 1.2rem;
+  }
+
   /* Artist section */
 
   .gallery {
@@ -458,7 +476,7 @@ form .textarea-field .error-txt {
   }
 
   .gallery img:hover {
-    transform: translateY(-2px) scale(1.2);
+    transform: translateY(-2px) scale(0.8);
     transition: all 0.5s ease-in-out;
   }
 
@@ -525,11 +543,21 @@ form .textarea-field .error-txt {
   }
 }
 
+@media (min-width: 1400px) {
+  .bio {
+    left: 44.9%;
+    transform: translate(-40%, -68%);
+    width: 80%;
+    font-size: 2.2rem;
+  }
+}
+
 @media (min-width: 1820px) {
   .bio {
     left: 44.9%;
     transform: translate(-40%, -68%);
     width: 80%;
+    font-size: 2.8rem;
   }
 
   .social-section {
