@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Hedvig+Letters+Sans&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 420px;
+  --breakpoint-tablet: 824px;
+  --breakpoint-wide: 1400px;
+  --breakpoint-ultrawide: 1820px;
+}
+
+@layer base {
+  * {
+    font-family: "Hedvig Letters Sans", "Dosis", Arial, Helvetica, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gallery-img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .gallery-img:hover {
+    transform: translateY(-3px) scale(0.8);
+    box-shadow:
+      rgba(2, 8, 20, 0.1) 0 1.35em 1.175em,
+      rgba(2, 8, 20, 0.08) 0 0.175em 0.5em;
+    transition: all 0.5s ease-in-out;
+  }
+}

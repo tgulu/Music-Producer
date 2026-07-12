@@ -1,0 +1,7 @@
+{
+  "python.analysis.exclude": ["**/node_modules/**"],
+  "python.analysis.ignore": ["**/node_modules/**"],
+  "files.associations": {
+    "gdbinit": "shellscript"
+  }
+}
