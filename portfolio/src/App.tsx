@@ -2,6 +2,7 @@ import { Element } from "react-scroll";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Gallery from "./components/Gallery";
+import Showcase from "./components/Showcase";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
@@ -15,6 +16,7 @@ function App() {
       <Element name="Artist">
         <Gallery />
       </Element>
+      <Showcase />
       <Element name="Contact">
         <ContactForm />
       </Element>

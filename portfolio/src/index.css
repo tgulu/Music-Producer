@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Hedvig+Letters+Sans&display=swap");
 @import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @theme {
   --breakpoint-xs: 420px;
@@ -24,5 +26,16 @@
       rgba(2, 8, 20, 0.1) 0 1.35em 1.175em,
       rgba(2, 8, 20, 0.08) 0 0.175em 0.5em;
     transition: all 0.5s ease-in-out;
+  }
+
+  .carousel-img {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+  }
+  .carousel-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
   }
 }
