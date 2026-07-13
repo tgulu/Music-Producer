@@ -16,33 +16,26 @@ export const labels: Label[] = [
     name: "em",
     src: em,
     liveDemo:
-      "https://open.spotify.com/album/5nlhLmWKBfIzkCxwVRAFd2?si=eBMfRftNTFCw5Afj4_kIwA",
+      "https://www.extrememusic.com/search?isLyricsSearch=false&query=CAMERON%20RENFREW%20NESBITT&talent=1",
   },
   {
     id: 2,
-    name: "felt",
-    src: felt,
+    name: "kpm",
+    src: kpm,
     liveDemo:
-      "https://open.spotify.com/album/1doa12HkHOap91vDyHQkB5?si=JTEfPq7pRAuuvwiYagN3jQ",
+      "https://www.extrememusic.com/search?isLyricsSearch=false&query=CAMERON%20RENFREW%20NESBITT&talent=1",
   },
   {
     id: 3,
     name: "happy",
     src: happy,
     liveDemo:
-      "https://open.spotify.com/track/7kbKcqVsikFIvrCLWg8dwf?si=aedeb64b4aca4db8",
+      "https://bmgproductionmusic.com/en-gb/search/tracks?searchTerm=composer:(Cameron%20Renfrew%20Nesbitt)&typed=composer:(cameron&typed=renfrew&typed=nesbitt)",
   },
   {
     id: 4,
-    name: "kpm",
-    src: kpm,
-    liveDemo: "https://open.spotify.com/artist/2WtdUdDkpWNrNQ19yFm1NY",
-  },
-  {
-    id: 5,
     name: "felt",
     src: felt,
-    liveDemo:
-      "https://open.spotify.com/album/1doa12HkHOap91vDyHQkB5?si=JTEfPq7pRAuuvwiYagN3jQ",
+    liveDemo: " https://www.feltpm.com/tracks?q=Cameron%20Nesbitt",
   },
 ];
