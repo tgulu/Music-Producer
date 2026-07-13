@@ -50,7 +50,6 @@ export const artists: Artist[] = [
     id: 6,
     name: "Mez",
     src: mez,
-    liveDemo:
-      "https://open.spotify.com/track/5KfAnCNhpi0pZiwvuhmKkr?si=69d35f1238b94e05",
+    liveDemo: "https://open.spotify.com/artist/627MRuU6ol9exWZK7sb4Ez",
   },
 ];
