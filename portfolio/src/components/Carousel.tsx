@@ -37,7 +37,7 @@ const settings: Settings = {
 const Carousel = ({ title, items }: CarouselProps) => {
   return (
     <div className="w-full py-10">
-      <h2 className="mb-8 text-center text-3xl font-light text-white tablet:text-xl">
+      <h2 className="mb-8 text-center text-xl md:text-5xl font-light text-white tablet:text-3xl">
         {title}
       </h2>
       <Slider {...settings}>
@@ -46,7 +46,7 @@ const Carousel = ({ title, items }: CarouselProps) => {
             <img
               src={item.src}
               alt={item.name}
-              className="carousel-img mx-auto h-24 w-auto object-contain tablet:h-16"
+              className="carousel-img mx-auto md:h-32 w-auto object-contain tablet:h-24 h-14"
             />
           </div>
         ))}
