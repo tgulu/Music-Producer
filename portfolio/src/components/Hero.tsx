@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-bottom bg-no-repeat tablet:bg-position-[82%_center]"
+      className="relative h-screen w-full bg-cover bg-position-[90%_center] md:bg-bottom bg-no-repeat tablet:bg-position-[82%_center]"
       style={{ backgroundImage: `url(${cameron5})` }}
     >
       <div className="absolute bottom-10 left-1/2 w-full max-w-8xl -translate-x-1/2 px-6 text-center xs:bottom-6">
