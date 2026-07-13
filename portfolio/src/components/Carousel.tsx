@@ -5,6 +5,7 @@ interface CarouselItem {
   id: number;
   name: string;
   src: string;
+  liveDemo: string;
 }
 
 interface CarouselProps {
@@ -37,18 +38,20 @@ const settings: Settings = {
 const Carousel = ({ title, items }: CarouselProps) => {
   return (
     <div className="w-full py-10">
-      <h2 className="mb-8 text-center text-xl md:text-5xl font-light text-white tablet:text-3xl">
+      <h2 className="mb-8 text-center text-xl md:text-3xl font-light text-white tablet:text-3xl">
         {title}
       </h2>
       <Slider {...settings}>
         {items.map((item) => (
-          <div key={item.id} className="px-3">
-            <img
-              src={item.src}
-              alt={item.name}
-              className="carousel-img mx-auto md:h-32 w-auto object-contain tablet:h-24 h-14"
-            />
-          </div>
+          <a href={item.liveDemo} target="_blank" rel="noreferrer">
+            <div key={item.id} className="px-3">
+              <img
+                src={item.src}
+                alt={item.name}
+                className="carousel-img mx-auto md:h-32 w-auto object-contain tablet:h-24 h-14"
+              />
+            </div>
+          </a>
         ))}
       </Slider>
     </div>
