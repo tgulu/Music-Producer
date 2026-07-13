@@ -38,4 +38,11 @@ export const labels: Label[] = [
     src: kpm,
     liveDemo: "https://open.spotify.com/artist/2WtdUdDkpWNrNQ19yFm1NY",
   },
+  {
+    id: 5,
+    name: "felt",
+    src: felt,
+    liveDemo:
+      "https://open.spotify.com/album/1doa12HkHOap91vDyHQkB5?si=JTEfPq7pRAuuvwiYagN3jQ",
+  },
 ];
