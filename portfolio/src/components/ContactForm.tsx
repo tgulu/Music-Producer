@@ -61,7 +61,7 @@ const ContactForm = () => {
       style={{ backgroundImage: `url(${artist4})` }}
     >
       <div className="relative z-10 flex w-full flex-col items-center">
-        <h1 className="mb-10 text-4xl font-light text-white">
+        <h1 className="mb-10 md:text-4xl text-2xl bg-black/20 sm:bg-none font-light text-white">
           Contact Details
         </h1>
 
@@ -78,7 +78,7 @@ const ContactForm = () => {
                 autoComplete="off"
                 value={values.name}
                 onChange={handleChange}
-                className={`w-full border-b bg-transparent px-2 py-2 text-2xl text-white placeholder:text-white outline-none ${
+                className={`w-full border-b bg-transparent px-2 py-2 text-xl sm:text-2xl text-white placeholder:text-white outline-none ${
                   errors.name ? "border-red-600" : "border-white"
                 }`}
               />
@@ -97,7 +97,7 @@ const ContactForm = () => {
               autoComplete="off"
               value={values.email}
               onChange={handleChange}
-              className={`w-full border-b bg-transparent px-2 py-2 text-2xl text-white placeholder:text-white outline-none ${
+              className={`w-full border-b bg-transparent px-2 py-2 text-xl sm:text-2xl text-white placeholder:text-white outline-none ${
                 errors.email ? "border-red-600" : "border-white"
               }`}
             />
@@ -115,7 +115,7 @@ const ContactForm = () => {
               autoComplete="off"
               value={values.subject}
               onChange={handleChange}
-              className={`w-full border-b bg-transparent px-2 py-2 text-2xl text-white placeholder:text-white outline-none ${
+              className={`w-full border-b bg-transparent px-2 py-2 text-xl sm:text-2xl text-white placeholder:text-white outline-none ${
                 errors.subject ? "border-red-600" : "border-white"
               }`}
             />
@@ -133,7 +133,7 @@ const ContactForm = () => {
               autoComplete="off"
               value={values.message}
               onChange={handleChange}
-              className={`w-full border-b bg-transparent px-2 py-2 text-2xl text-white placeholder:text-white outline-none ${
+              className={`w-full border-b bg-transparent px-2 py-2 text-xl sm:text-2xl text-white placeholder:text-white outline-none ${
                 errors.message ? "border-red-600" : "border-white"
               }`}
             />
